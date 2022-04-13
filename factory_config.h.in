@@ -1,0 +1,3 @@
+// the configured options and settings for factory
+#define FACTORY_VERSION_MAJOR @factory_VERSION_MAJOR@
+#define FACTORY_VERSION_MINOR @factory_VERSION_MINOR@
