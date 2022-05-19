@@ -7,11 +7,9 @@ option(USE_MYMACHINES "Use factory provided machines implementation" ON)
 configure_file(factory_config.h.in factory_config.h)
 
 add_subdirectory(apps)
-add_subdirectory(machines)
 
-#add_executable(factory factory.c)
-
-#target_link_libraries(factory PUBLIC machines)
+# uncomment below to include machines library in factory
+#add_subdirectory(machines)
 
 target_include_directories(factory PUBLIC
     "${PROJECT_BINARY_DIR}"
